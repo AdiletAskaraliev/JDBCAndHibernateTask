@@ -1,6 +1,6 @@
 package peaksoft.service;
 
-import peaksoft.dao.UserDao;
+
 import peaksoft.dao.UserDaoJdbcImpl;
 import peaksoft.model.User;
 
