@@ -70,9 +70,9 @@ public class UserDaoJdbcImpl implements UserDao {
              PreparedStatement preparedStatement = connection.prepareStatement(sql)) {
 
             preparedStatement.setLong(1, id);
-            int rowsUpdated = preparedStatement.executeUpdate();
+            int isDeleted = preparedStatement.executeUpdate();
 
-            if (rowsUpdated > 0) {
+            if (isDeleted > 0) {
                 System.out.println(id + " is deleted");
             } else {
                 System.out.println("No student with ID " + id + " found.");
